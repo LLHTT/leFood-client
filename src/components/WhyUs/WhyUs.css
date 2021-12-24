@@ -1,0 +1,91 @@
+.why {
+    margin-block: 100px;
+    color: var(--text-dark);
+}
+
+.why-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.why-container div {
+    flex-basis: 20%;
+    text-align: center;
+    background-color: var(--bg-lighter);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(173, 173, 173, 0.24) 0px 3px 8px;
+}
+
+.why-container div img {
+    height: 100;
+}
+
+.why-container div a {
+    color: var(--text-dark);
+    transition: all .2s linear;
+}
+
+.why-container div a:hover {
+    color: var(--accent-gray);
+}
+
+.why-title {
+    font-size: 45px;
+}
+
+@media (max-width: 850px) {
+    .why {
+        padding-inline: 70px;
+    }
+
+    .why-title {
+        font-size: var(--fs-m-title);
+    }
+
+    .why-container div {
+        flex-basis: 25%;
+    }
+
+    .why-container div img {
+        height: 70;
+    }
+
+    .why-container div h3 {
+        font-size: 18;
+    }
+
+    .why-container div p {
+        font-size: var(--fs-m-txt);
+    }
+
+    .why-container div a {
+        font-size: var(--fs-m-txt);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-container {
+        display: block;
+    }
+
+    .why {
+        padding-inline: 3em;
+    }
+
+    .why-title {
+        font-size: var(--fs-s-title);
+    }
+
+    .why-container div {
+        margin-top: 2em;
+    }
+
+    .why-container div p {
+        font-size: var(--fs-s-txt);
+    }
+
+    .why-container div a {
+        font-size: var(--fs-s-txt);
+    }
+}

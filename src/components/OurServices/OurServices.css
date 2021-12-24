@@ -1,0 +1,175 @@
+.services {
+    color: var(--text-dark);
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.services-title {
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.services-txt {
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.services-container {
+    max-width: 800px;
+    margin-inline: auto;
+    /* To align the button.slick-arrow center */
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    cursor: pointer;
+    /* background-color: var(--bg-dark); */
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+
+.card-image:hover {
+    transform: translateY(-120px);
+}
+
+.card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-inline: 3px;
+    /* transition: all .5s; */
+}
+
+.card-content {
+    position: absolute;
+    /* margin-inline: auto; */
+    bottom: -130px;
+    margin: 0 3px;
+    text-align: center;
+    background-color: var(--bg-dark);
+    color: #fff;
+    transition: all .6s;
+}
+
+/* Pop up the card-content when hover to card-image */
+.card-image:hover + .card-content {
+    opacity: 1;
+    bottom: 0px;
+}
+
+.card-content p {
+    padding: 0 80px;
+}
+
+button.slick-arrow.slick-next::before,
+button.slick-arrow.slick-prev::before {
+    color: var(--bg-dark);
+}
+
+@media (max-width: 850px) {
+    .services-container {
+        max-width: 700px;
+        padding: 0 50px;
+    }
+
+    .card-content {
+        bottom: -115px;
+    }
+
+    .services {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .services-title {
+        margin-top: 0;
+        font-size: var(--fs-m-title);
+    }
+
+    .services-txt {
+        font-size: var(--fs-m-txt);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .carousel {
+        width: 100%;
+        max-width: 400px;
+        height: 300;
+    }
+    
+    .card {
+        height: 300;
+    }
+    
+    .card-image {
+        position: absolute;
+        top: 0;
+        height: 300;
+        transition: all .6s;
+    }
+    
+    .card-image > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        width: 194px;
+        height: 300px;
+        font-size: var(--fs-s-txt);
+        top: 84%;
+        text-align: center;
+    }
+
+    .card-image:hover + .card-content {
+        transform: translateY(-110px);
+    }
+
+    .card-content h3 {
+        font-size: 14px;
+    }
+    
+    .card-content p {
+        padding: 0 1em;
+        font-size: 12px;
+    }
+
+    .services {
+        margin-bottom: 8em;
+    }
+
+    .services-title {
+        font-size: var(--fs-s-title);
+        font-weight: bold;
+    }
+
+    .services-txt {
+        font-size: var(--fs-s-txt);
+    }
+}
