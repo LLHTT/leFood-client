@@ -15,7 +15,7 @@ export default function Order() {
 
   useEffect(() => {
     // Axios request to get db to front-end
-    Axios.get('http://localhost:3001/read')
+    Axios.get('https://mern-lefood.herokuapp.com/read')
     .then((response) => {
       //console.log(response);
       setFoodList(response.data);
@@ -25,7 +25,7 @@ export default function Order() {
   const addToList = (event) => {
     event.preventDefault()
     // Axios request to insert db/ send data to back-end
-    Axios.post("http://localhost:3001/insert", {
+    Axios.post("https://mern-lefood.herokuapp.com/insert", {
       foodName: foodName,
       day: day,
       time: time,
@@ -45,7 +45,7 @@ export default function Order() {
 
   function updateFood(id) {
     if (newFoodName) {
-      Axios.put("http://localhost:3001/update", {
+      Axios.put("https://mern-lefood.herokuapp.com/update", {
         newFoodName: newFoodName,
         id: id
       })
@@ -53,7 +53,7 @@ export default function Order() {
   };
 
   function deleteFood(id) {
-    Axios.delete(`http://localhost:3001/delete/${id}`)
+    Axios.delete(`https://mern-lefood.herokuapp.com/delete/${id}`)
   };
 
   return (

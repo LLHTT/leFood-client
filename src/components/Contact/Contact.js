@@ -11,7 +11,7 @@ export default function Contact() {
     const sendContact = (event) => {
         event.preventDefault()
         // Axios request to insert db/ send data to back-end
-        Axios.post("http://localhost:3001/contacts", {
+        Axios.post("https://mern-lefood.herokuapp.com/contacts", {
           contactName: contactName,
           contactEmail: contactEmail,
           contactMessage: contactMessage

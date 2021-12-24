@@ -9,7 +9,7 @@ export default function Footer() {
     const subscribe = (event) => {
         event.preventDefault()
         // Axios request to insert db/ send data to back-end
-        Axios.post("http://localhost:3001/subscribes", {
+        Axios.post("https://mern-lefood.herokuapp.com/subscribes", {
           email: email,
         })
         .then((response) => {
