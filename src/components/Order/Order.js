@@ -53,7 +53,12 @@ export default function Order() {
   };
 
   function deleteFood(id) {
-    Axios.delete(`https://mern-lefood.herokuapp.com/delete/${id}`)
+    const confirm = window.confirm(
+      'Do you really want to delete this food?'
+    )
+    if (confirm) {
+      Axios.delete(`https://mern-lefood.herokuapp.com/delete/${id}`)
+    }
   };
 
   return (
