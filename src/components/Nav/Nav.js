@@ -4,9 +4,9 @@ import Logo from "../../images/logo.png";
 import { useState } from "react";
 
 export default function Nav() {
-    const [isActive, setActive] = useState("false")
+    const [isActive, setIsActive] = useState(false)
     const handleToggle = () => {
-        setActive(!isActive)
+        setIsActive(!isActive)
     }
 
     return (

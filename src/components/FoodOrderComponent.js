@@ -6,10 +6,11 @@ export default function FoodOrderComponent(props) {
 
             <form className="food-content" onSubmit={props.addToList}>
                 <div>
-                    <label>Food Name</label>
+                    <label htmlFor="food">Food Name</label>
                     <input
                         type="text" 
                         placeholder="Example: Pho"
+                        name="food"
                         value={props.foodName}
                         onChange={(event) => {
                             props.setFoodName(event.target.value);
@@ -48,10 +49,11 @@ export default function FoodOrderComponent(props) {
                 </div>
                 <br />
                 <div>
-                    <label>Special Requests</label>
+                    <label htmlFor="request">Special Requests</label>
                     <input
                         type="text"
                         placeholder="Optional"
+                        name="request"
                         value={props.specialRequest}
                         onChange={(event) => {
                             props.setSpecialRequest(event.target.value);

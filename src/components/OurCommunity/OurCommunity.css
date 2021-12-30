@@ -96,7 +96,7 @@
     color: #fff;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 1100px) {
     .community {
         max-width: 730px;
         padding: 0 70px;
@@ -117,12 +117,13 @@
     }
 
     .sub-row {
-        width: 260;
-        height: 180;
-        padding: 20;
+        width: 250px;
+        height: 180px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .sub-row h3 {
@@ -135,15 +136,16 @@
     }
 
     .sub-row button {
-        margin-top: 0;
+        /* margin-top: 0; */
+        width: 150px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .community {
         padding: 0 3em;
-        margin: 0 auto;
         margin-block: 5em;
+        margin: 0 auto;
     }
 
     .community-title {
@@ -162,6 +164,7 @@
         text-align: center;
         width: 300px;
         margin-bottom: 3em;
+        margin: 0 auto;
     }
 
     .community-img1,
@@ -171,10 +174,10 @@
     }
 
     .sub-row {
-        width: 300;
+        width: 100%;
         height: 200;
         position: static;
-        padding: 30;
+        margin-bottom: 50px;
     }
 
     .sub-row h3 {
@@ -185,5 +188,26 @@
     .sub-row p {
         font-size: 13px;
         padding: 0 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    .community-txt {
+        padding: 0;
+    }
+
+    .community-row1,
+    .community-row2 {
+        width: 240px;
+    }
+
+    .community-img1,
+    .community-img2 {
+        width: 240px;
+        height: 140px;
+    }
+
+    .community-row1 {
+        padding-top: 30px;
     }
 }

@@ -45,7 +45,7 @@
     }
     
     .about-content {
-        padding: 0 30px;
+        padding: 1em;
     }
 
     .about-title {
@@ -78,5 +78,15 @@
 
     .about {
         margin-bottom: 5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        padding: 0.5em;
+    }
+
+    .about-content {
+        padding: 0.5em;
     }
 }

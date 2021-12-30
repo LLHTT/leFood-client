@@ -4,7 +4,7 @@ import Why2 from "../../images/why2.png";
 import Why3 from "../../images/why3.png";
 import { Link } from 'react-router-dom';
 
-export default function() {
+export default function WhyUs() {
     return (
         <section className="why">
             <h1 className="why-title">Why Choose LeFood?</h1>

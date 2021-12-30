@@ -9,7 +9,6 @@ export default function Order() {
   const [foodName, setFoodName] = useState("");
   const [day, setDay] = useState("");
   const [time, setTime] = useState("");
-  const [newFoodName, setNewFoodName] = useState("");
   const [specialRequest, setSpecialRequest] = useState("");
   const [foodList, setFoodList] = useState([]);
 
@@ -43,23 +42,7 @@ export default function Order() {
     })
   };
 
-  function updateFood(id) {
-    if (newFoodName) {
-      Axios.put("https://mern-lefood.herokuapp.com/update", {
-        newFoodName: newFoodName,
-        id: id
-      })
-    }
-  };
-
-  function deleteFood(id) {
-    const confirm = window.confirm(
-      'Do you really want to delete this food?'
-    )
-    if (confirm) {
-      Axios.delete(`https://mern-lefood.herokuapp.com/delete/${id}`)
-    }
-  };
+  
 
   return (
     <div className="orderPage">
@@ -76,9 +59,6 @@ export default function Order() {
       />
       <FoodListComponent 
         foodList={foodList}
-        setNewFoodName={setNewFoodName}
-        updateFood={updateFood}
-        deleteFood={deleteFood}
       />
     </div>
   )

@@ -1,34 +1,44 @@
-import React, { useState, useEffect } from "react";
-import RecipeCard from "../RecipeCard";
-import SearchBar from "../SearchBar";
-import "./Recipes.css";
+import React, { useState, useEffect } from "react"
+import RecipeCard from "../RecipeCard"
+import SearchBar from "../SearchBar"
+import "./Recipes.css"
 
 export default function Recipes() {
-    const [isLoading, setIsLoading] = useState(false);
-    const [query, setQuery] = useState("");
-    const [recipes, setRecipes] = useState([]);
+    const [isLoading, setIsLoading] = useState(false)
+    const [query, setQuery] = useState("")
+    const [recipes, setRecipes] = useState([])
     
-    const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+    const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s="
     
     // Function to search for the recipes
+
     const searchRecipes = async () => {
-        setIsLoading(true);
-        const url = apiUrl + query;
-        const res = await fetch(url);
-        const data = await res.json();
+        setIsLoading(true)
+        const url = apiUrl + query
+        const res = await fetch(url)
+        const data = await res.json()
         // console.log(data);
-        setRecipes(data.meals);
-        setIsLoading(false);
-    };
+        setRecipes(data.meals)
+        setIsLoading(false)
+    }
 
     useEffect(() => {
-        searchRecipes();
-    }, []);
+        searchRecipes()
+    }, [])
 
     const handleSubmit = event => {
-        event.preventDefault();
-        searchRecipes();
+        event.preventDefault()
+        searchRecipes()
     }
+
+    // Auto filter text in search input field
+
+    // const [data, setDate] = useState([])
+    // const [q, setQ] = useState("")
+
+    // useEffect(() => {
+    //     fetch("")
+    // })
 
     return (
         <div className="recipes-container">

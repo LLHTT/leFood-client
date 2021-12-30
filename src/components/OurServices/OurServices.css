@@ -4,6 +4,10 @@
     margin-top: 100px;
     margin-bottom: 150px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-title {
@@ -40,7 +44,7 @@
 
 .card-image {
     position: absolute;
-    top: 0;
+    top: 10px;
     width: 100%;
     height: 100%;
     transition: all .6s;
@@ -61,7 +65,7 @@
 .card-content {
     position: absolute;
     /* margin-inline: auto; */
-    bottom: -130px;
+    bottom: -137px;
     margin: 0 3px;
     text-align: center;
     background-color: var(--bg-dark);
@@ -84,20 +88,13 @@ button.slick-arrow.slick-prev::before {
     color: var(--bg-dark);
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 950px) {
     .services-container {
-        max-width: 700px;
-        padding: 0 50px;
+        margin: 0 3em;
     }
 
     .card-content {
-        bottom: -115px;
-    }
-
-    .services {
-        padding-top: 0;
-        display: flex;
-        align-items: center;
+        bottom: -137px;
     }
 
     .services-title {
@@ -110,66 +107,65 @@ button.slick-arrow.slick-prev::before {
     }
 }
 
-@media (max-width: 600px) {
-    .services-container {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    .carousel {
-        width: 100%;
-        max-width: 400px;
-        height: 300;
-    }
-    
+@media screen and (max-width: 766px) {
     .card {
-        height: 300;
-    }
-    
-    .card-image {
-        position: absolute;
-        top: 0;
-        height: 300;
-        transition: all .6s;
-    }
-    
-    .card-image > img {
+        position: relative;
         width: 100%;
-        height: 300px;
-        object-fit: cover;
+        cursor: pointer;
+        /* background-color: var(--bg-dark); */
     }
 
     .card-content {
-        width: 194px;
-        height: 300px;
-        font-size: var(--fs-s-txt);
-        top: 84%;
-        text-align: center;
+        bottom: -240px;
+        margin: 0 3px;
     }
 
     .card-image:hover + .card-content {
-        transform: translateY(-110px);
+        opacity: 1;
+        bottom: -240px;
     }
 
-    .card-content h3 {
-        font-size: 14px;
+    .card-image:hover {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-content {
+        bottom: -271px;
+        margin: 0 3px;
+    }
+
+    .card-image:hover + .card-content {
+        opacity: 1;
+        bottom: -250px;
     }
     
-    .card-content p {
-        padding: 0 1em;
-        font-size: 12px;
-    }
 
     .services {
         margin-bottom: 8em;
     }
 
-    .services-title {
-        font-size: var(--fs-s-title);
+    .card-content h3 {
+        font-size: 16px;
         font-weight: bold;
     }
 
     .services-txt {
         font-size: var(--fs-s-txt);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .services-container {
+    }
+
+    .card-content h3 {
+        font-size: 12px;
+    }
+
+    .card-content p {
+        display: none;
     }
 }

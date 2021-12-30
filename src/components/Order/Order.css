@@ -36,7 +36,7 @@
 
 .food-content input,
 .food-content select {
-  width: 220px;
+  width: 200px;
   margin-left: 10px;
   font-size: 15px;
 }
@@ -92,14 +92,15 @@
 .btn-food {
   cursor: pointer;
   font-family: inherit;
-  padding: 5px 10px;
+  padding: .3em .5em;
+  margin: .2em;
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  padding: 5px 15px;
   background-color: #fab437;
   color: #fff;
   text-transform: uppercase;
+  font-size: .7rem;
 }
 
 .btn-food:hover {
@@ -109,9 +110,11 @@
 /* Food List */
 
 .food-list {
-  min-height: 50vh;
+  max-width: 1000px;
+  width: 85%;
   color: var(--text-dark);
   padding-bottom: 20px;
+  margin: 4em auto;
 }
 
 .food-list > h2 {
@@ -121,96 +124,42 @@
   margin: 0;
 }
 
-table.desktop {
-  width: 1100px;
+table {
+  width: 100%;
   margin: 0 auto;
   color: var(--text-dark);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-collapse: collapse;
+  table-layout: auto;
 }
 
-table.destop > thead {
+table > thead {
   text-transform: uppercase;
   font-size: 15px;
 }
 
-table.desktop > thead > tr > th,
-table.desktop > tbody > tr > td {
+table > thead > tr > th,
+table > tbody > tr > td {
   text-align: center;
   border: 1px solid #dbdbdb;
   padding: 10px;
 }
 
-table.tablet {
-  display: none;
-}
-
-@media (max-width: 850px) {
-  .food-list {
-    padding: 0 70px;
+@media screen and (max-width: 420px) {
+  .table {
+    font-size: .9rem;
   }
 
-  table.desktop {
-    display: none;
+  .food-list > h2 {
+    font-size: 1.5rem;
   }
 
-  table.tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: var(--text-dark);
-  }
-
-  table.tablet > tbody > tr > th {
-    text-transform: uppercase;
-    font-size: 15px;
-    border: 1px solid #dbdbdb;
-    height: 50px;
-    width: 200px;
-  } 
-  
-  table.tablet > thead > tr > th,
-  table.tablet > tbody > tr > td {
-    text-align: center;
-    border: 1px solid #dbdbdb;
-    padding: 10px;
-  }
-
-  table.tablet > tbody {
-    padding-top: 40px;
-  }
-
-  .food-list-hr {
-    width: 300px;
-    margin-top: 40px;
-    color: #fff;
-  }
-}
-
-@media (max-width: 600px) {
-  .headline {
-    width: 200px;
+  table > thead {
+    font-size: .8rem;
   }
 
   .food-order h1 {
-    font-size: var(--fs-s-title);
-  }
-
-  .food-content {
-    font-size: var(--fs-s-txt);
-    align-items: center;
-  }
-
-  .food-content div {
-    flex-direction: column;
-  }
-
-  table.tablet {
-    font-size: var(--fs-s-txt);
-    box-shadow: none;
-  }
-
-  table.tablet > thead > tr > th {
-    font-size: 11px;
+    font-size: 1.6rem;
   }
 }
+

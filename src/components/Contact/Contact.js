@@ -48,7 +48,7 @@ export default function Contact() {
                         />
                         <label>Email Address</label>
                         <input
-                            type="text"
+                            type="email"
                             value={contactEmail}
                             onChange={(event) => {
                                 setContactEmail(event.target.value);
