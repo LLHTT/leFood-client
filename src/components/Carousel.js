@@ -14,7 +14,7 @@ export default function ImageSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: "linear",
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         centerMode: true
     }
