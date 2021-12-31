@@ -1,26 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Axios from 'axios'
 import React from 'react'
 
 function FoodListTable(props) {
     const [newFoodName, setNewFoodName] = useState("")
-    const [editButton, setEditButton] = useState(false)
+    // const [editButton, setEditButton] = useState(false)
+    
     const handleEdit = () => {
-        setEditButton(current => !current)
+        const enteredFood = prompt('Please enter your new food:')
+        setNewFoodName(enteredFood)
+        console.log(newFoodName)
+        if (enteredFood) {
+            Axios.put("https://mern-lefood.herokuapp.com/update", {
+            newFoodName: enteredFood,
+            id: props.val._id
+            })
+        }
     }
 
-    useEffect(() => {
-        console.log(editButton)
-    }, [editButton])
+    // useEffect(() => {
+    //     console.log(editButton)
+    // }, [editButton])
 
-    function updateFood(id) {
-        if (newFoodName) {
-          Axios.put("https://mern-lefood.herokuapp.com/update", {
-            newFoodName: newFoodName,
-            id: id
-          })
-        }
-      };
+    
     
     function deleteFood(id) {
         const confirm = window.confirm(
@@ -35,7 +37,7 @@ function FoodListTable(props) {
         <tr key={props.val.id}>
             <td>
                 {props.val.foodName}
-                {editButton && 
+                {/* {editButton && 
                     <div>
                         <input
                             placeholder="New food name: ..."
@@ -49,7 +51,7 @@ function FoodListTable(props) {
                             Update
                         </button>
                     </div>
-                }
+                } */}
             </td>
             <td>
                 <span>{props.val.atTime}</span>

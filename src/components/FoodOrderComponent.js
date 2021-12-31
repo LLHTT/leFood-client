@@ -21,7 +21,7 @@ export default function FoodOrderComponent(props) {
                 </div>
                 <br />
                 <div>
-                    <label htmlFor="day">For Day</label>
+                    <label htmlFor="day">Date</label>
                     <input 
                         name="day"
                         type="date"
