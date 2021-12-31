@@ -7,6 +7,7 @@ export default function Contact() {
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
     const [contactMessage, setContactMessage] = useState("");
+    const [successMessage, setSuccessMessage] = useState(false)
 
     const sendContact = (event) => {
         event.preventDefault()
@@ -17,10 +18,10 @@ export default function Contact() {
           contactMessage: contactMessage
         })
         .then((response) => {
-            alert('Thank you! We will contact you shortly!')
             setContactName('')
             setContactEmail('')
             setContactMessage('')
+            setSuccessMessage(true)
         })
         .catch((err) => {
             console.log(`There was an Error: {err}`)
@@ -34,6 +35,9 @@ export default function Contact() {
                 <div>
                     <p className="contact-txt">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                 </div>
+                {successMessage && 
+                        <div className="success-message">Thank you for contacting Lawrence!</div>
+                    }   
                 <div>
                     <form className="contact-form" onSubmit={sendContact}>
                         <label>Name</label>

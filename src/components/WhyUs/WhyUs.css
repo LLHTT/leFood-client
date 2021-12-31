@@ -37,11 +37,9 @@
     font-size: 45px;
 }
 
-@media (max-width: 950px) {
-    .why {
-        /* padding-inline: 70px; */
-    }
+/* Media Queries */
 
+@media screen and (max-width: 950px) {
     .why-title {
         font-size: var(--fs-m-title);
     }
@@ -70,7 +68,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .why-title {
         font-size: var(--fs-s-title);
     }

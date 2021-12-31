@@ -27,9 +27,8 @@
     padding-bottom: 20px;
 }
 
-
-
 /* Media Queries */
+
 @media (max-width: 850px) {
     .testimonial-container {
         flex-direction: column;
@@ -52,10 +51,6 @@
 }
 
 @media (max-width: 600px) {
-    .testimonial-container {
-        /* display: block */
-    }
-
     .testimonial-title {
         font-size: var(--fs-s-title);
     }

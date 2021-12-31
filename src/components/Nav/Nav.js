@@ -19,22 +19,22 @@ export default function Nav() {
                 </div>
                 <div className={`toggle ${isActive ? "active" : ""}`} onClick={handleToggle}></div>
                 <div className={`navbar ${isActive ? "active" : ""}`}>
-                    <Link to="/" className='nav-link'>
+                    <Link to="/" className='nav-link' onClick={handleToggle}>
                         <li>Home</li>
                     </Link>
-                    <Link to="/about" className='nav-link'>
+                    <Link to="/about" className='nav-link'  onClick={handleToggle}>
                         <li>About</li>
                     </Link>
-                    <Link to="/recipes" className='nav-link'>
+                    <Link to="/recipes" className='nav-link' onClick={handleToggle}>
                         <li>Recipes</li>
                     </Link>
-                    <Link to="/services" className='nav-link'>
+                    <Link to="/services" className='nav-link' onClick={handleToggle}>
                         <li>Services</li>
                     </Link>
-                    <Link to="/contact" className='nav-link'>
+                    <Link to="/contact" className='nav-link' onClick={handleToggle}>
                         <li>Contact</li>
                     </Link>
-                    <Link to="/order" className='nav-link'>
+                    <Link to="/order" className='nav-link' onClick={handleToggle}>
                         <li>Order</li>
                     </Link>
                 </div>

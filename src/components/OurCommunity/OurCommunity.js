@@ -5,7 +5,7 @@ export default function OurCommunity() {
     return (
         <section className="community">
             <h1 className="community-title">Our Community</h1>
-            <p className="community-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="community-txt">Lorem ipsum dolor sit amet, elit, sed do eius mod tempor incididunt ut labore to dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation torch ullamco ut laboris nisi ut aliquip ex earche commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nutella arc pariatur.</p>
             <div className="community-row1">
                 <div className="community-img1"></div>
                 <div className="sub-row sub-row1">

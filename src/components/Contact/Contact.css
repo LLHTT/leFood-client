@@ -34,12 +34,12 @@
 }
 
 .contact-form label {
-    padding-bottom: 20px;
+    margin-bottom: 10px;
     /* font-size: 20px; */
 } 
 
 .contact-form input {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 } 
 
 .contact-form input:focus {
@@ -59,12 +59,12 @@
     width: 100%;
     font-weight: bold;
     border: none;
-    /* border-radius: 20px; */
     display: block;
     margin-inline: auto;
     background-color: var(--cta);
     color: #fff;
     text-transform: uppercase;
+    margin-top: 2em;
 }
 
 .contact-btn:hover {

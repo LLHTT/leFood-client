@@ -88,6 +88,8 @@ button.slick-arrow.slick-prev::before {
     color: var(--bg-dark);
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 950px) {
     .services-container {
         width: 80%;;
