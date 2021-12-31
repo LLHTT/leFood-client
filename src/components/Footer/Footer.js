@@ -17,11 +17,13 @@ export default function Footer() {
         .then((response) => {
             if (response.status === 200) {
                 setSuccessMessage(true)
+                setErrorMessage(false)
                 setEmail('')
             } 
         })
         .catch((err) => {
             setErrorMessage(true)
+            setSuccessMessage(false)
             console.log(`There was an Error: {err}`)
         })
     }
