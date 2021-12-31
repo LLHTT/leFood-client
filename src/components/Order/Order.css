@@ -137,7 +137,6 @@ table {
 table > thead {
   text-transform: uppercase;
   font-size: 15px;
-  /* max-width: 100px; */
   background-color: var(--accent);
   color: white;
   word-break: break;

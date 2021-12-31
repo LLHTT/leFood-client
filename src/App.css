@@ -37,17 +37,6 @@ body {
 } 
 
 hr {
-  opacity: .3;
+  opacity: .2;
 }
 
-@media (max-width: 850px) {
-  hr {
-    max-width: calc(100% - 11em);
-  }
-}
-
-@media (max-width: 600px) {
-  hr {
-    max-width: calc(100% - 6em);
-  }
-}

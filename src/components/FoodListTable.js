@@ -4,7 +4,6 @@ import React from 'react'
 
 function FoodListTable(props) {
     const [newFoodName, setNewFoodName] = useState("")
-    // const [editButton, setEditButton] = useState(false)
     
     const handleEdit = () => {
         const enteredFood = prompt('Please enter your new food:')
@@ -18,12 +17,6 @@ function FoodListTable(props) {
         }
     }
 
-    // useEffect(() => {
-    //     console.log(editButton)
-    // }, [editButton])
-
-    
-    
     function deleteFood(id) {
         const confirm = window.confirm(
             'Do you really want to delete this food?'
@@ -37,21 +30,6 @@ function FoodListTable(props) {
         <tr key={props.val.id}>
             <td>
                 {props.val.foodName}
-                {/* {editButton && 
-                    <div>
-                        <input
-                            placeholder="New food name: ..."
-                            type="text"
-                            onChange={(event) => {
-                            setNewFoodName(event.target.value);
-                            }}
-                            className="input-food"
-                        />
-                        <button onClick={() => updateFood(props.val._id)} className="btn-food">
-                            Update
-                        </button>
-                    </div>
-                } */}
             </td>
             <td>
                 <span>{props.val.atTime}</span>

@@ -83,10 +83,16 @@
 
 @media (max-width: 400px) {
     .about {
-        padding: 0.5em;
+        padding: 1em;
+        margin: 100px 0;
     }
 
     .about-content {
         padding: 0.5em;
+    }
+
+    .about-txt {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }

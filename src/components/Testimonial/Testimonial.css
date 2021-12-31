@@ -31,13 +31,10 @@
 
 /* Media Queries */
 @media (max-width: 850px) {
-    .testimonial {
-        /* padding-inline: 90px; */
-    }
-
     .testimonial-container {
-        overflow: auto;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .testimonial-container div {
