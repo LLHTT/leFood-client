@@ -1,0 +1,198 @@
+/* Food Order */
+
+.food-order {
+  background-color: var(--bg-lighter);
+  color: var(--text-dark);
+  width: 100%;
+  padding-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.food-order h1 {
+  letter-spacing: 2px;
+  margin: 0; 
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.headline {
+  padding-top: 30px;
+  width: 250px;
+  z-index: 1;
+}
+
+.food-content {
+  max-width: 375px;
+  margin-inline: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-end; 
+  margin-top: 2em;
+}
+
+/* Form */
+
+.food-content input,
+.food-content select {
+  width: 200px;
+  height: 30px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.food-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-content > *:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.food-content div input {
+  justify-content: center;
+  align-items: center;
+}
+
+.input-food {
+  border-radius: 5px;
+  text-indent: 5px;
+  outline: none;
+}
+
+.input-day {
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-time {
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button */
+
+.btn-add {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 7px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+  background-color: var(--cta);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-add:hover {
+  background-color: var(--cta-hover);
+}
+
+.btn-food {
+  cursor: pointer;
+  font-family: inherit;
+  width: 30px;
+  padding: .3em;
+  margin: .2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #fab437;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+.btn-food:hover {
+  background-color: #f1aa2e;
+}
+
+/* Food List */
+
+.food-list {
+  max-width: 1000px;
+  width: 85%;
+  color: var(--text-dark);
+  padding-bottom: 20px;
+  margin: 4em auto;
+}
+
+.food-list > h2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 28px;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--text-dark);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+table > thead {
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: var(--accent);
+  color: white;
+  word-break: break;
+}
+
+table th,
+table td {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 420px) {
+  .food-list {
+    width: 100%;
+  }
+  
+  .table {
+    font-size: .9rem;
+  }
+
+  .food-list > h2 {
+    font-size: 1.5rem;
+  }
+
+  table > thead {
+    font-size: .8rem;
+  }
+
+  .food-order h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .table {
+    font-size: .8rem;
+  }
+
+  .food-list > h2 {
+    font-size: 1.4rem;
+  }
+
+  table > thead {
+    font-size: .7rem;
+  }
+
+  .food-order h1 {
+    font-size: 1.4rem;
+  }
+}

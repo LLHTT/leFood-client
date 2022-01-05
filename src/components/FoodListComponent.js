@@ -1,4 +1,4 @@
-import FoodListTable from "./FoodListTable";
+import FoodListTable from "./FoodListTable"
 
 export default function FoodListComponent(props) {
     return (

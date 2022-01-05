@@ -1,12 +1,16 @@
-import React from 'react';
-import './App.css';
-import Home from './components/Home';
-import Nav from './components/Nav/Nav';
-import About from './components/About/About';
-import Recipes from './components/Recipes/Recipes'
-import Services from './components/OurServices/OurServices'
-import Contact from './components/Contact/Contact';
-import Order from './components/Order/Order';
+import React from 'react'
+import './style/App.css'
+import Home from './Pages/Home'
+import Nav from './components/Nav'
+import About from './Pages/About'
+import Recipes from './Pages/Recipes'
+import Services from './Pages/OurServices'
+import Contact from './Pages/Contact'
+import Order from './Pages/Order'
+import BreakfastDelivery from './components/BreakfastDelivery'
+import CustomBreakfast from './components/CustomBreakfast'
+import VeganBreakfast from './components/VeganBreakfast'
+import Events from './components/Events'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

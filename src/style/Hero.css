@@ -1,0 +1,195 @@
+.hero-container {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.hero-content h1 {
+    margin-top: 0;
+    text-align: start;
+    font-size: 38px;
+}
+
+.hero-tag {
+    color: rgb(118, 118, 118);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.i-bg {
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 65% 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('/src/images/i-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Wrapper */
+ul li {
+    list-style: none;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding-block: 10px;
+}
+
+.static-txt {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.dynamic-txt {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    height: 52.2px;
+    line-height: 52.2px;
+    overflow: hidden;
+}
+
+.dynamic-txt li {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--cta);
+    letter-spacing: 1.5px;
+    position: relative;
+    top: 0;
+    animation: slide 4.5s steps(3) infinite;
+    /* typing time x 3 */
+}
+
+@keyframes slide {
+    100% {
+        top: -156.6px;  /* line-height x 3 */
+    }
+}
+
+.dynamic-txt li span {
+    position: relative;
+}
+
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--cta);
+    background: var(--bg-light);
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -25px 0 25px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .hero-container {
+        height: 350px;
+        padding-inline: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-tag {
+        font-size: 15px;
+    }
+
+    .static-txt {
+        font-size: 20px;
+    }
+
+    .dynamic-txt {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .dynamic-txt li {
+        font-size: 20px;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -90px;  /* line-height x 3 */
+        }
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .i-bg {
+        /* display: none; */
+        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 65% 100%);
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .hero-container {
+        /* margin: 0 auto; */
+        padding: 1em;
+    }
+
+    .hero-tag {
+        padding-bottom: 20px;
+    }
+} 
+
+@media screen and (max-width: 570px) {
+    .i-bg {
+        clip-path: none;
+        height: 45%;
+        background-position: top;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 0;
+        top: 45%;
+        padding: 2em;
+        justify-content: center;
+    }
+
+    .hero-container {
+        height: 480px;
+    }
+
+    .hero-tag {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 21px;
+    }
+}

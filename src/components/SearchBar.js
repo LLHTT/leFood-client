@@ -3,6 +3,7 @@ export default function SearchBar({ value, isLoading, handleSubmit, onChange }) 
         <form onSubmit={handleSubmit}>
             <input 
                 value={value}
+                autoComplete="on"
                 disabled={isLoading}
                 onChange={onChange}
                 placeholder="Search Recipes"

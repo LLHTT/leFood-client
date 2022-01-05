@@ -1,0 +1,69 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Roots */
+
+:root {
+  /* colors */
+  --bg-light: #ffe7e0;
+  --bg-lighter: #fffce1;
+  --bg-dark: #0c1622;
+  --bg-brown: #3b1d0f;
+  --text-dark: #080e16;
+  
+  --cta: #ff3300;
+  --cta-hover: #f13000;
+  --accent: #ff3300;
+  --accent-gray: #818a91;
+  /* color of elements in Why Choose LeFood */
+  /* color: #d43d3d; */
+  /* color: #ffad87; */
+
+  /* font-size */
+  --fs-m-title: 2rem;
+  --fs-m-txt: 1rem;
+  --fs-s-title: 1.375rem;
+  --fs-s-txt: 15px;
+} 
+
+hr {
+  opacity: .2;
+}
+
+/* Order Button */
+
+.order-btn {
+  text-decoration: none;
+  padding: 6px 20px;
+  background-color: var(--cta);
+  color: #fff;
+  border-radius: 20px;
+  align-self: start; 
+  font-size: 1.3rem;
+}
+
+.order-btn:hover {
+  background-color: var(--cta-hover);
+}
+
+@media screen and (max-width: 400px) {
+  .order-btn {
+  font-size: 1rem;
+  }
+}

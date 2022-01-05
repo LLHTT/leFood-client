@@ -1,0 +1,112 @@
+.our-services {
+
+}
+
+/*-----------------------------------/
+            BREAKFAST DELI          /
+----------------------------------*/
+
+/* Deli Panel */
+
+#deli {
+    margin-bottom: 10rem;
+}
+
+.deli__panel {
+    /* position: relative;   */
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--bg-dark);
+    background-image: linear-gradient(#000000a2 0%, #000000a8 100%), url('/src/images/bfast-deli.jpg');
+    background-position: center;
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px){
+    .deli__panel {
+        background-size: 1000px;
+    }
+}
+
+.deli__panel h1 {
+    font-size: 3rem;
+}
+
+/* Deli Location */
+
+.deli__location {
+    display: flex;
+    min-height: 600px;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 1000px){
+    .deli__location {
+        flex-direction: column-reverse;
+    }
+}
+
+.location__map {
+    position: relative;
+    flex-basis: 55%;
+    min-height: 400px;
+}
+
+.location__map::after {
+    position: absolute;
+    content: "Where We At";
+    top: -30px;
+    /* left: 38%; */
+    font-size: 1.2rem;
+    padding: 0 .5em;
+    background-color: #e24149;
+    color: #fff;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px){
+    .location__map::after {
+        display: none;
+    }
+}
+
+.location__content {
+    flex-basis: 45%;
+    background: var(--bg-dark);
+    color: #fff;
+    min-height: 400px;
+    padding: 3em;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.location__content h2 {
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 0;
+}
+
+.location__content h2::before {
+    position: absolute;
+    content: "";
+    bottom: -1.5rem;
+    left: 0;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.location__info {
+    padding: 1em 0;
+}
+
+.location__fee {
+    padding-bottom: 1em;
+}
