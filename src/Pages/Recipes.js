@@ -36,23 +36,23 @@ export default function Recipes() {
 
   // const onChange = e => setQuery(e.target.value);
 
-  const onChange = async e => {
-    setQuery(e.target.value)
-    if (query !== "") {
-      const result = await Axios.get(url2)
-      console.log(result)
-      setRecipes(result.data.hits)
-    }
-  }
-  
   // const onChange = async e => {
-  //   setQuery(e.target.value);
+  //   setQuery(e.target.value)
   //   if (query !== "") {
-  //     const result = await Axios.get(url2);
-  //     console.log(result);
-  //     setSuggestions(result.data.hits.label);
+  //     const result = await Axios.get(url2)
+  //     console.log(result)
+  //     setRecipes(result.data.hits)
   //   }
   // }
+  
+  const onChange = async e => {
+    setQuery(e.target.value);
+    if (query !== "") {
+      const result = await Axios.get(url2);
+      console.log(result);
+      setSuggestions(result.data.hits.label);
+    }
+  }
 
   const onSubmit = e => {
     e.preventDefault()
