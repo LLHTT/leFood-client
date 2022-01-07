@@ -25,7 +25,7 @@ function FoodListTable(props) {
             Axios.delete(`https://mern-lefood.herokuapp.com/delete/${id}`)
         }
     };
-      
+
     return (
         <tr key={props.val.id}>
             <td>

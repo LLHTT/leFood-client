@@ -10,44 +10,105 @@
 .recipes h1 {
     font-size: 45px; 
     letter-spacing: 0.1rem;
-    /* font-style: italic; */
     color: var(--accent);
-    /* text-shadow: 0 0.2rem 5rem rgb(119, 115, 115); */
     text-transform: uppercase;
-    /* margin: 4rem 0; */
+}
+
+.search-box {
+    width: 70%;
+}
+
+@media screen and (max-width: 500px) {
+    .search-box {
+        width: 100%;
+    }
+
+    .search-form input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .recipes {
+        display: block;
+    }
 }
 
 .search-form {
-    width: 70%;
-    height: 4.5rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #d3d3d3;
-    border-radius: 0.5rem;
-    margin-bottom: 5rem;
-    /* box-shadow: 1rem 2rem 5rem #aaa; */
     position: relative;
+}
+
+.search-result {
+    border: 2px solid #d3d3d3;
+}
+
+.search-item p {
+    margin-block: 5px;
+    margin-left: 10px;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.search-item:hover {
+    background-color: #d3d3d3;
 }
 
 .search-form input {
     font-size: 1.2rem;
     border: none;
     outline: none;
-    /* border-bottom: 0.1rem solid #ccc; */
     margin: 0 0.5rem;
     border-radius: 0.5rem;
     height: 2.5rem;
+    position: relative;
 }
 
 .search-form input[type="text"] {
     padding: 0 0.5rem;
-    width: 60%;
+    width: 66%;
     color: #555;
 }
 
+.close-icon {
+    position: absolute;
+    right: 34%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-icon svg {
+    font-size: 21px;
+}
+
+@media screen and (max-width: 811px) {
+    .close-icon {
+        right: 35%;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .close-icon {
+        right: 36%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .close-icon {
+        right: 40%;
+    }
+}
+
 .search-form input[type="submit"] {
-    width: 25%;
+    width: 30%;
     text-transform: uppercase;
     background-color: var(--cta);
     color: #fff;
@@ -56,19 +117,17 @@
 
 .search-form input[type="submit"]:hover {
     background-color: var(--cta-hover);
-
 }
 
 .alert {
     position: absolute;
-    /* max-width: 200px; */
+    max-width: 100%;
     height: 2.4rem;
-    top: 4.5rem;
-    left: 0;
+    top: 4rem;
+    left: 50;
     background-color: rgb(233, 72, 72);
     width: calc(100% - 0.4rem);
-    border-radius: 0.5rem;
-    /* padding: 0.2rem; */
+    /* border-radius: 0.5rem; */
     display: flex;
     align-items: center;
     justify-content: center;

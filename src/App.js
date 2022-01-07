@@ -7,10 +7,6 @@ import Recipes from './Pages/Recipes'
 import Services from './Pages/OurServices'
 import Contact from './Pages/Contact'
 import Order from './Pages/Order'
-import BreakfastDelivery from './components/BreakfastDelivery'
-import CustomBreakfast from './components/CustomBreakfast'
-import VeganBreakfast from './components/VeganBreakfast'
-import Events from './components/Events'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
