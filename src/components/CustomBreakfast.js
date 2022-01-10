@@ -7,15 +7,12 @@ import { HashLink } from 'react-router-hash-link'
 function CustomBreakfast() {
     // Quantity count
     const [count, setCount] = useState(1)
-
     const increment = () => {
         setCount(prevCount => prevCount + 1)
     }
-
     const decrement = () => {
         setCount(prevCount => prevCount - 1)
     }
-
     const minQuantity = count === 1
 
     return (
@@ -76,7 +73,8 @@ function CustomBreakfast() {
                             <div className="quantity">
                                 <button 
                                     onClick={decrement} 
-                                    className="quantity-btn"                         disabled={minQuantity}      
+                                    disabled={minQuantity}      
+                                    className="quantity-btn"                         
                                 >-</button>
                                 <input type="text" value={count} name="quantity" className="quantity-input"/>
                                 <button 

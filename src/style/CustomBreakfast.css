@@ -1,3 +1,7 @@
+#custom {
+    margin-bottom: 10em;
+}
+
 .custom__panel {
     width: 100%;
     min-height: 400px;
@@ -16,7 +20,7 @@
 }
 
 .custom__container {
-    margin-top: 5rem;
+    margin-top: 5em;
     display: flex;
 }
 

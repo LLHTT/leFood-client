@@ -30,9 +30,12 @@ nav {
 .nav-link {
   color: var(--text-dark);
   margin-right: 30px;
-  font-weight: 300;
   text-decoration: none;
   transition: all .1s linear;
+}
+
+.nav-link li {
+  font-size: 1.05rem;
 }
 
 .nav-link:hover {

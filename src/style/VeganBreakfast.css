@@ -1,0 +1,52 @@
+#vegan {
+    margin-bottom: 10em;
+}
+
+.vegan__panel {
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--bg-dark);
+    background-image: linear-gradient(#00000062 0%, #0000008a 100%), url('/src/images/vegan1.jpg');
+    background-position: center;
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.vegan__intro {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vegan__intro__left {
+    flex-basis: 40%;
+    max-width: 500px;
+}
+
+.vegan__intro__right {
+    flex-basis: 40%;
+}
+
+.vegan__intro__right img {
+    width: 100%;
+}
+
+/* Vegan Items */
+.veganItem {
+    max-width: 50rem; 
+    margin: 0 auto;
+    /* gap: 1.5rem; */
+}
+
+.veganItem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.veganItem__card {
+    border: 1px solid red;
+}
