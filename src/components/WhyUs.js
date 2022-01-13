@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export default function WhyUs() {
     return (
         <section className="why">
-            <h1 className="why-title">Why Choose LeFood?</h1>
+            <h1 className="why-title">Why Choose leFood?</h1>
             <div className="why-container">
                 <div>
                     <img src={Why1} alt="Budget pricing" />

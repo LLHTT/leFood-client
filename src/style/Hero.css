@@ -15,16 +15,16 @@
     width: 40%;
 }
 
-.hero-content h1 {
+.hero-title {
     margin-top: 0;
     text-align: start;
-    font-size: 38px;
+    font-size: 2.8rem;
 }
 
 .hero-tag {
     color: rgb(118, 118, 118);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.25rem;
 }
 
 .i-bg {
@@ -104,23 +104,25 @@ ul li {
     }
 }
 
+/* Media Queries */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1066px) {
     .hero-container {
         height: 350px;
         padding-inline: 2rem;
     }
 
     .hero-content h1 {
-        font-size: 30px;
+        font-size: 2.5rem;
+        margin-bottom: 0;
     }
 
     .hero-tag {
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     .static-txt {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .dynamic-txt {
@@ -129,7 +131,7 @@ ul li {
     }
 
     .dynamic-txt li {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     @keyframes slide {
@@ -139,32 +141,13 @@ ul li {
     }
 }
 
-@media screen and (max-width: 601px) {
-    .i-bg {
-        /* display: none; */
-        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 65% 100%);
-    }
-
+@media screen and (max-width: 760px) {
     .hero-content h1 {
-        font-size: 24px;
+        font-size: 2.3rem;
     }
+}
 
-    .hero-content {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .hero-container {
-        /* margin: 0 auto; */
-        padding: 1em;
-    }
-
-    .hero-tag {
-        padding-bottom: 20px;
-    }
-} 
-
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 701px) {
     .i-bg {
         clip-path: none;
         height: 45%;
@@ -172,11 +155,21 @@ ul li {
     }
 
     .hero-content {
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         left: 0;
         top: 45%;
         padding: 2em;
         justify-content: center;
+    }
+    
+    .hero-container {
+        padding: 1em;
+    }
+
+    .hero-tag {
+        padding-bottom: 1.25em;
     }
 
     .hero-container {
@@ -188,8 +181,14 @@ ul li {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 510px) {
     .hero-content h1 {
-        font-size: 21px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .hero-container {
+        height: 580px;
     }
 }

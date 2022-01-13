@@ -1,5 +1,4 @@
 .why {
-    margin-block: 100px;
     color: var(--text-dark);
 }
 
@@ -9,7 +8,6 @@
 }
 
 .why-container div {
-    /* flex-basis: 20%; */
     width: 300px;
     height: 350px;
     text-align: center;
@@ -27,55 +25,23 @@
 .why-container div a {
     color: var(--text-dark);
     transition: all .2s linear;
+    text-decoration: underline;
 }
 
 .why-container div a:hover {
-    color: var(--accent-gray);
+    color: var(--gray);
 }
 
 .why-title {
-    font-size: 45px;
+    font-size: var(--fs-xl);
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 950px) {
-    .why-title {
-        font-size: var(--fs-m-title);
-    }
-
+@media screen and (max-width: 770px) {
     .why-container {
-        /* display: block; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .why-container div img {
-        height: 70px;
-    }
-
-    .why-container div h3 {
-        font-size: 18px;
-    }
-
-    .why-container div p {
-        font-size: var(--fs-m-txt);
-    }
-
-    .why-container div a {
-        font-size: var(--fs-m-txt);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .why-title {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .why-title {
-        font-size: var(--fs-s-title);
     }
 }

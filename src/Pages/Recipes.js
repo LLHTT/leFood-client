@@ -47,7 +47,7 @@ export default function Recipes() {
     }
 
     return (
-        <div className="recipes-container">
+        <div className="recipes">
             <div className="search-box">
               <h1>Your Recipe App</h1>
               <SearchBar
@@ -65,7 +65,7 @@ export default function Recipes() {
               }
               <div className="search-result">
                 {
-                  recipes !== null &&
+                  recipes && query !== "" &&
                     recipes.slice(0, 5).map((val) => {
                       return (
                         <a className="search-item" href={val.strSource} target="_blank" rel="noopener noreferrer">
@@ -76,16 +76,16 @@ export default function Recipes() {
                 }
               </div>
             </div>
-            <div className="recipes">
+            <div className="recipes-container">
               {
-                recipes ?
+                recipes && query !== null ?
                   recipes.map((recipe) => (
                       <RecipeCard 
                           key={recipe.idMeal}
                           recipe={recipe}
                       />
                   ))
-                  : "We're sorry! No recipes for such name."
+                  : "We're sorry! No recipe found."
               }
             </div>
         </div>

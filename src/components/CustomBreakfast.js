@@ -1,8 +1,8 @@
-import React from 'react'
+import { useState } from 'react'
 import '../style/CustomBreakfast.css'
 import CustomImg from '../images/custom2.jpg'
-import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
+import AddToCardButton from './AddToCardButton'
 
 function CustomBreakfast() {
     // Quantity count
@@ -82,10 +82,10 @@ function CustomBreakfast() {
                                     className="quantity-btn"
                                 >+</button>
                             </div>
-                            <button className="add-cart-btn">Add To Card</button>
+                            <AddToCardButton />
                         </div>
                         <div className="custom__info">
-                            <p>Take your breakfast to the next level! Let our culinary team cater to your individual health goals, busy schedule and bottom line with our healthy variety of breakfast proteins, carbs and veggies.</p>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
                             <p>Create your own meals and let us help you stick to your plan!</p>
                             <HashLink to="#vegan">
                                 <p>Looking for vegan breakfast? Click here</p>

@@ -45,7 +45,7 @@ export default function Order() {
   
 
   return (
-    <div className="orderPage">
+    <div className="order">
       <FoodOrderComponent 
         setFoodName={setFoodName}
         setDay={setDay}

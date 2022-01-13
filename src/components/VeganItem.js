@@ -1,3 +1,4 @@
+import AddToCardButton from "./AddToCardButton"
 
 function veganItem({ veganFoodItem }) {
     return (
@@ -11,10 +12,12 @@ function veganItem({ veganFoodItem }) {
                                     <img src={item.image} alt={item.name} />
                                 </div>
                                 <ul>
-                                    <h5>{item.name}</h5>
+                                    <h4>{item.name} - {item.size}</h4>
                                     <p>{item.price}</p>
+                                    <h5>{item.shipping}</h5>
+                                    <h5>{item.stock}</h5>
                                 </ul>
-                                <button className="add-cart-btn">Add To Card</button>
+                                <AddToCardButton />
                             </div>
                         )
                     })
