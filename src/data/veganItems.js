@@ -80,24 +80,6 @@ const veganItems = [
         price: '$4.99',
         shipping: 'Free Standard Shipping',
         stock: 'In stock'
-    },
-    {
-        id: 9,
-        image: veganItem8,
-        name: "Siete Sea Salt Tortilla Chips",
-        size: '5oz',
-        price: '$4.99',
-        shipping: 'Free Standard Shipping',
-        stock: 'In stock'
-    },
-    {
-        id: 10,
-        image: veganItem8,
-        name: "Siete Sea Salt Tortilla Chips",
-        size: '5oz',
-        price: '$4.99',
-        shipping: 'Free Standard Shipping',
-        stock: 'In stock'
     }
 ]
 
