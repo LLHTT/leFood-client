@@ -19,7 +19,7 @@ function BreakfastDelivery() {
                 <div className="location__content">
                     <h2>Breakfast Delivery</h2>
                     <div className="location__info">
-                        <p>Ordering in today? Here's your best option: Breakfast Delivery by LeFood.</p>
+                        <p>Ordering in today? Here's your best option: Breakfast Delivery by leFood.</p>
                         <p>Get served like a king and forget about doing the dishes.</p>
                         <p>Simply select "Order now" button and choose your food delivery.</p>
                     </div>
