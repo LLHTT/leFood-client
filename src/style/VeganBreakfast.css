@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 300px;
     background-color: var(--bg-dark);
-    background-image: linear-gradient(#0000004d 0%, #0000006c 100%), url('/src/images/vegan1.jpg');
+    background-image: linear-gradient(#0000007e 0%, #0000008e 100%), url('/src/images/vegan1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,11 +39,11 @@
     color: var(--cta);
     font-weight: 600;
     transition: all .1s linear;
-    text-decoration: underline;
 }
 
 .vegan__intro__left p a:hover {
     color: var(--cta-hover);
+    text-decoration: underline;
 }
 
 .vegan__intro__right {

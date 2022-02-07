@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 300px;
     background-color: var(--bg-dark);
-    background-image: linear-gradient(#0000003f 0%, #00000038 100%), url('/src/images/event1.jpg');
+    background-image: linear-gradient(#00000083 0%, #0000007a 100%), url('/src/images/event1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
