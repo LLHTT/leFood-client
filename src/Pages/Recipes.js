@@ -31,12 +31,10 @@ export default function Recipes() {
     // instant search
     useEffect(() => {
       const fetchData = async () => {
-        // if (query !== "") {
-          const result = await Axios.get(url)
-          console.log(result);
-          setRecipes(result.data.meals)
-          setActiveRecipes(recipes.slice(0, 8))
-        // }
+        const result = await Axios.get(url)
+        console.log(result);
+        setRecipes(result.data.meals)
+        setActiveRecipes(recipes.slice(0, 8))
       }
       fetchData()
         .catch(console.error)
