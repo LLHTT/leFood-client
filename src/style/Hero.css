@@ -60,48 +60,13 @@ ul li {
     padding: 0;
     margin: 0;
     margin-left: 10px;
-    height: 52.2px;
-    line-height: 52.2px;
+    height: 52px;
+    line-height: 52px;
     overflow: hidden;
-}
-
-.dynamic-txt li {
     font-size: 35px;
     font-weight: 500;
     color: var(--cta);
     letter-spacing: 1.5px;
-    position: relative;
-    top: 0;
-    animation: slide 4.5s steps(3) infinite;
-    /* typing time x 3 */
-}
-
-@keyframes slide {
-    100% {
-        top: -156.6px;  /* line-height x 3 */
-    }
-}
-
-.dynamic-txt li span {
-    position: relative;
-}
-
-.dynamic-txt li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid var(--cta);
-    background: var(--bg-light);
-    animation: typing 1.5s steps(10) infinite;
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -25px 0 25px;
-    }
 }
 
 /* Media Queries */
@@ -122,22 +87,13 @@ ul li {
     }
 
     .static-txt {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 
     .dynamic-txt {
         height: 30px;
+        font-size: 1.3rem;
         line-height: 30px;
-    }
-
-    .dynamic-txt li {
-        font-size: 1.25rem;
-    }
-
-    @keyframes slide {
-        100% {
-            top: -90px;  /* line-height x 3 */
-        }
     }
 }
 
@@ -152,6 +108,11 @@ ul li {
         clip-path: none;
         height: 45%;
         background-position: top;
+    }
+
+    .dynamic-txt {
+        height: 30px;
+        line-height: 32px;
     }
 
     .hero-content {

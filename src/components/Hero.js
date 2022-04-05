@@ -1,5 +1,6 @@
 import "../style/Hero.css"
 import OrderButton from "./OrderButton"
+import Typed from 'react-typed'
 
 export default function Hero() {
     return (
@@ -8,11 +9,17 @@ export default function Hero() {
                 <h1 className="hero-title">Breakfast Made For You</h1>
                 <div className="wrapper">
                     <div className="static-txt">Stay</div>
-                    <ul className="dynamic-txt">
-                        <li><span>Healthy</span></li>
-                        <li><span>Safe</span></li>
-                        <li><span>At Home</span></li>
-                    </ul>
+                    <div className="dynamic-txt">
+                        <Typed
+                            strings={[
+                            'Home',
+                            'Safe',
+                            'Healthy']}
+                            typeSpeed={90}
+                            backSpeed={70}
+                            loop
+                        />
+                    </div>
                 </div>
                 <p className="hero-tag">Order online for super-fast delivery</p>
                 <OrderButton />     
