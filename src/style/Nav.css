@@ -10,7 +10,8 @@ nav {
 }
   
 #logo {
-  height: 50px;
+  height: 40px;
+  transform: translateY(3px);
 }
 
 .nav-list {
@@ -35,7 +36,7 @@ nav {
 }
 
 .nav-link li {
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -43,7 +44,7 @@ nav {
 }
 
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .toggle {
     position: relative;
     width: 27px;
@@ -111,13 +112,13 @@ nav {
   
   .nav-list {
     margin-bottom: 1em;
-    padding: 0 4em 0 3em;
+    padding: 0 2em 0 1em;
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #logo {
-    height: 45;
+    height: 35px;
   }
   
   .navbar.active {
