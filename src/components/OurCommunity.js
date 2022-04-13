@@ -5,12 +5,12 @@ export default function OurCommunity() {
     return (
         <section className="community">
             <h1 className="community-title">Our Community</h1>
-            <p className="community-txt">Lorem ipsum dolor sit amet, elit, sed do eius mod tempor incididunt ut labore to dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation torch ullamco ut laboris nisi ut aliquip ex earche commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nutella arc pariatur.</p>
+            <p className="community-txt">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             <div className="community-row1">
                 <div className="community-img1"></div>
                 <div className="sub-row sub-row1">
                     <h3>Find something to cook?</h3>
-                    <p>Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
+                    <p>Learn everything there is to know about the passage.</p>
                     <button><Link to="/recipes">Recipe App</Link></button>
                 </div>
             </div>
@@ -18,7 +18,7 @@ export default function OurCommunity() {
                 <div className="community-img2"></div>
                 <div className="sub-row sub-row2">
                     <h3>Looking for a job?</h3>
-                    <p>Excepteur sint non proident, sunt in culpa qui officia mollit.</p>
+                    <p>From its medieval origins to the digital era.</p>
                     <button>Our Career</button>
                 </div>
             </div>

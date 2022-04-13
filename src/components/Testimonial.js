@@ -7,19 +7,19 @@ export default function Testimonial() {
             <div className="testimonial-container">
                 <div>
                     <blockquote>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                         <figcaption>—Lawrence Le</figcaption>
                     </blockquote>
                 </div>
                 <div>
                     <blockquote>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
                         <figcaption>—Julie Lai</figcaption>
                     </blockquote>
                 </div>
                 <div>
                     <blockquote>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id laborum. </p>
+                        <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>
                         <figcaption>—Corazon L.</figcaption>
                     </blockquote>
                 </div>

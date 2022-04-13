@@ -12,19 +12,19 @@ export default function WhyUs() {
                 <div>
                     <img src={Why1} alt="Budget pricing" />
                     <h3>Budget Pricing</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident anim id est laborum.</p>
+                    <p>The purpose of lorem ipsum is to create a natural looking block of text.</p>
                     <Link to="/#">Learn More</Link>
                 </div>
                 <div>
                     <img src={Why2} alt="Chef plan" />
                     <h3>Chef Plan For You</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ea commodo consequat.</p>
+                    <p>It has roots in a piece of classical Latin literature from 45 BC.</p>
                     <Link to="/#">Learn More</Link>
                 </div>
                 <div>
                     <img src={Why3} alt="Delivery" />
                     <h3>Super Fast Delivery</h3>
-                    <p>Duis aute irure dolor in reprehenderit in dolore eu fugiat nulla pariatur.</p>
+                    <p>Use our generator to get your own, or read on for the authoritative history.</p>
                     <Link to="/#">Learn More</Link>
                 </div>
             </div>

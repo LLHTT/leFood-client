@@ -35,9 +35,6 @@ export default function Contact() {
                 <div>
                     <p className="contact-txt">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                 </div>
-                {successMessage && 
-                        <div className="success-message">Thank you for contacting Lawrence!</div>
-                    }   
                 <div>
                     <form className="contact-form" onSubmit={sendContact}>
                         <label>Name</label>
@@ -70,6 +67,9 @@ export default function Contact() {
                             required
                             className="input-contact-message"
                         />
+                        {successMessage && 
+                            <div className="contact-success-message">Thank you for contacting Lawrence!</div>
+                        }   
                         <button className="contact-btn">Submit</button>
                     </form>
                 </div>
